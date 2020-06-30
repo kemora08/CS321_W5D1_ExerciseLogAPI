@@ -22,7 +22,7 @@ namespace CS321_W5D1_ExerciseLogAPI.Controllers
     {
         private readonly UserManager<User> _userManager;
         private readonly IConfiguration _config;
-        public AuthController(UserManager<User> userManager)
+        public AuthController(UserManager<User> userManager, IConfiguration configuration)
         {
 
             _userManager = userManager;
@@ -84,7 +84,7 @@ namespace CS321_W5D1_ExerciseLogAPI.Controllers
             return null;
         }
 
-        public IConfiguration configuration { get; }
+      
 
         // TODO: Prep Part 1: add constructor and inject UserManager 
 
